@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Disneyland Adventure Itinerary</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#">
+      <img src="https://images.unsplash.com/photo-1542219550-37153d387c47?q=80&w=1200&auto=format&fit=crop" alt="Castle logo" />
+      <span>Disneyland Adventure</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#overview">Overview</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#packing">Packing List</a>
+      <a href="#faq">FAQ</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+      <button id="menuToggle" class="icon-btn burger" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img class="hero-bg" src="https://images.unsplash.com/photo-1523809321674-8f1273186961?q=80&w=1600&auto=format&fit=crop" alt="Disneyland fireworks" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>3-Day Disneyland Itinerary</h1>
+      <p>Plan smarter, pack faster, and make every moment magical.</p>
+      <a href="#schedule" class="btn">View Schedule</a>
+    </div>
+  </section>
+
+  <main>
+    <!-- OVERVIEW -->
+    <section id="overview" class="section container">
+      <h2>Overview</h2>
+      <div class="grid-3">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1200&auto=format&fit=crop" alt="Tickets" />
+          <h3>Purpose</h3>
+          <p>A simple, mobile-friendly plan for families or friends to explore Disneyland with minimal waiting and maximum fun.</p>
+          <ul class="bullets">
+            <li>Rope-drop strategy & Lightning Lane tips</li>
+            <li>Breaks built around parades & shows</li>
+            <li>Balanced rides for all ages</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Checklist" />
+          <h3>What You’ll Need</h3>
+          <ul class="bullets">
+            <li>Valid park tickets + park reservations</li>
+            <li>Charged phone with Disneyland app</li>
+            <li>Water bottle, sunscreen, comfy shoes</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt="Plan" />
+          <h3>Quick Facts</h3>
+          <ul class="bullets">
+            <li>Best arrival: 45–60 mins before opening</li>
+            <li>Mobile order meals to skip lines</li>
+            <li>Afternoons = shows, evenings = headliners</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="section container">
+      <div class="section-header">
+        <h2>Daily Schedule</h2>
+        <div class="chips" role="tablist" aria-label="Choose day">
+          <button class="chip active" data-day="1" role="tab" aria-selected="true">Day 1: Disneyland Park</button>
+          <button class="chip" data-day="2" role="tab" aria-selected="false">Day 2: California Adventure</button>
+          <button class="chip" data-day="3" role="tab" aria-selected="false">Day 3: Flexible / Favorites</button>
+        </div>
+      </div>
+
+      <div class="day day-1 visible" data-day="1">
+        <div class="timeline">
+          <div class="time-block">
+            <span class="time">07:30</span>
+            <div class="details">
+              <h4>Arrive & Rope Drop</h4>
+              <p>Scan in early, head straight to <strong>Space Mountain</strong> or <strong>Peter Pan</strong>.</p>
+            </div>
+          </div>
+          <div class="time-block">
+            <span class="time">10:30</span>
+            <div class="details">
+              <h4>Snack & Characters</h4>
+              <p>Mobile order coffee & pastry; look for characters near the castle.</p>
+            </div>
+          </div>
+          <div class="time-block">
+            <span class="time">14:00</span>
+            <div class="details">
+              <h4>Parade & Rest</h4>
+              <p>Catch the parade, then cool off with indoor attractions (e.g., Pirates).</p>
+            </div>
+          </div>
+          <div class="time-block">
+            <span class="time">20:30</span>
+            <div class="details">
+              <h4>Fireworks Finale</h4>
+              <p>Stake out a spot 30–40 minutes early for the show.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day day-2" data-day="2">
+        <div class="timeline">
+          <div class="time-block">
+            <span class="time">08:00</span>
+            <div class="details">
+              <h4>Web Slingers / Radiator Springs</h4>
+              <p>Prioritize one with Lightning Lane; single rider lines help.</p>
+            </div>
+          </div>
+          <div class="time-block">
+            <span class="time">12:30</span>
+            <div class="details">
+              <h4>Lunch & Chill</h4>
+              <p>Mobile order at Pym Test Kitchen; relax in shaded seating.</p>
+            </div>
+          </div>
+          <div class="time-block">
+            <span class="time">16:00</span>
+            <div class="details">
+              <h4>Pixar Pier Loop</h4>
+              <p>Incredicoaster, Toy Story Midway Mania, and photos on the pier.</p>
+            </div>
+          </div>
+          <div class="time-block">
+            <span class="time">19:30</span>
+            <div class="details">
+              <h4>Nighttime Spectacular</h4>
+              <p>End with World of Color (arrive early for good viewing).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day day-3" data-day="3">
+        <div class="timeline">
+          <div class="time-block">
+            <span class="time">09:00</span>
+            <div class="details">
+              <h4>Slept-In Start</h4>
+              <p>Breakfast at the hotel; pick a park based on favorites or missed rides.</p>
+            </div>
+          </div>
+          <div class="time-block">
+            <span class="time">13:00</span>
+            <div class="details">
+              <h4>Photo Hunt</h4>
+              <p>Recreate favorite shots; buy souvenirs mid-day while lines peak.</p>
+            </div>
+          </div>
+          <div class="time-block">
+            <span class="time">18:00</span>
+            <div class="details">
+              <h4>Greatest Hits</h4>
+              <p>Re-ride your top 3 attractions before a final castle photo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKING LIST -->
+    <section id="packing" class="section container">
+      <div class="section-header">
+        <h2>Packing List</h2>
+        <div class="packing-actions">
+          <button id="clearChecked" class="btn btn-secondary">Uncheck All</button>
+          <button id="printBtn" class="btn">Print Itinerary</button>
+        </div>
+      </div>
+
+      <div class="packing-grid">
+        <div class="pack-card">
+          <h3>Essentials</h3>
+          <ul class="checklist" data-list="essentials">
+            <li><label><input type="checkbox"> Tickets & IDs</label></li>
+            <li><label><input type="checkbox"> Phone + Charger/Power Bank</label></li>
+            <li><label><input type="checkbox"> Wallet & Cash</label></li>
+            <li><label><input type="checkbox"> Hotel Confirmation</label></li>
+          </ul>
+        </div>
+
+        <div class="pack-card">
+          <h3>Comfort</h3>
+          <ul class="checklist" data-list="comfort">
+            <li><label><input type="checkbox"> Refillable Water Bottle</label></li>
+            <li><label><input type="checkbox"> Sunscreen & Hat</label></li>
+            <li><label><input type="checkbox"> Comfy Walking Shoes</label></li>
+            <li><label><input type="checkbox"> Light Rain Jacket/Poncho</label></li>
+          </ul>
+        </div>
+
+        <div class="pack-card">
+          <h3>Extras</h3>
+          <ul class="checklist" data-list="extras">
+            <li><label><input type="checkbox"> Autograph Book & Pen</label></li>
+            <li><label><input type="checkbox"> Snacks</label></li>
+            <li><label><input type="checkbox"> Mini First-Aid</label></li>
+            <li><label><input type="checkbox"> Stroller / Baby Gear</label></li>
+          </ul>
+        </div>
+
+        <div class="pack-card add-card">
+          <h3>Add Your Item</h3>
+          <form id="addItemForm">
+            <input id="newItemText" type="text" placeholder="e.g., Cooling towel" aria-label="New item" />
+            <select id="newItemList" aria-label="Choose list">
+              <option value="essentials">Essentials</option>
+              <option value="comfort">Comfort</option>
+              <option value="extras">Extras</option>
+            </select>
+            <button class="btn" type="submit">Add</button>
+          </form>
+          <p class="hint">Your checklist is saved to this browser.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section container">
+      <h2>FAQ</h2>
+      <div class="accordion">
+        <details>
+          <summary>How early should we arrive?</summary>
+          <p>Plan to be at the gate 45–60 minutes before opening to minimize waits for top rides.</p>
+        </details>
+        <details>
+          <summary>Do we need Genie+/Lightning Lane?</summary>
+          <p>Helpful on busy days. Use it for headliners and stack return times in late afternoon.</p>
+        </details>
+        <details>
+          <summary>What about meals?</summary>
+          <p>Use mobile order for popular quick-service spots. Dine off-peak (11:00 or 15:00) to avoid lines.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section container">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=1200&auto=format&fit=crop" alt="Castle" />
+        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200&auto=format&fit=crop" alt="Mickey balloons" />
+        <img src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?q=80&w=1200&auto=format&fit=crop" alt="Popcorn cart" />
+        <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=1200&auto=format&fit=crop" alt="Ferris wheel" />
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Disneyland Adventure Itinerary · Built for fun trips & happy feet.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
